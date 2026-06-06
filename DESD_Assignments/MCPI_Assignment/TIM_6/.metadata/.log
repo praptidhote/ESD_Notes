@@ -1,0 +1,36 @@
+!SESSION 2026-04-05 21:32:15.772 -----------------------------------------------
+eclipse.buildId=Version 2.1.0
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/sunbeam/Desktop/DESD_Assignments/MCPI_Assignment/TIM_6
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-05 21:32:19.728
+!MESSAGE Log4j2 initialized with config file /home/sunbeam/Desktop/DESD_Assignments/MCPI_Assignment/TIM_6/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-05 21:32:22.302
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-04-05 21:34:17.593 -----------------------------------------------
+eclipse.buildId=Version 2.1.0
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/sunbeam/Desktop/DESD_Assignments/MCPI_Assignment/TIM_6
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-05 21:34:20.377
+!MESSAGE Log4j2 initialized with config file /home/sunbeam/Desktop/DESD_Assignments/MCPI_Assignment/TIM_6/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-05 21:34:22.939
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-04-05 21:34:38.997 -----------------------------------------------
+eclipse.buildId=Version 2.1.0
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data file:/home/sunbeam/Desktop/DESD_Assignments/MCPI_Assignment/TIM_6/
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-05 21:34:41.837
+!MESSAGE Log4j2 initialized with config file /home/sunbeam/Desktop/DESD_Assignments/MCPI_Assignment/TIM_6/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-05 21:34:44.253
+!MESSAGE Started RMI Server, listening on port 41337
