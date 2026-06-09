@@ -1,0 +1,3 @@
+/home:
+total 4
+drwxr-x--- 33 sunbeam sunbeam 4096 Apr 23 17:46 sunbeam
