@@ -1,0 +1,89 @@
+19:00:03 **** Incremental Build of configuration Debug for project LED_toggle ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:23:1: error: expected identifier or '(' before string constant
+   23 | "lcd.h"
+      | ^~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallBack':
+../Core/Src/main.c:67:21: error: 'htim7' undeclared (first use in this function); did you mean 'htim'?
+   67 |         if(htim == &htim7)
+      |                     ^~~~~
+      |                     htim
+../Core/Src/main.c:67:21: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:69:17: error: implicit declaration of function 'HAL_GPIO_Toggle'; did you mean 'HAL_GPIO_TogglePin'? [-Wimplicit-function-declaration]
+   69 |                 HAL_GPIO_Toggle(GPIOD,GPIO_PIN_15);
+      |                 ^~~~~~~~~~~~~~~
+      |                 HAL_GPIO_TogglePin
+../Core/Src/main.c:70:20: error: 'Count' undeclared (first use in this function); did you mean 'count'?
+   70 |                 if(Count%2 == 0)
+      |                    ^~~~~
+      |                    count
+../Core/Src/main.c:72:44: error: 'uart2' undeclared (first use in this function); did you mean 'huart2'?
+   72 |                         HAL_UART_Transmit(&uart2,(uin8_t*)"NOT PRESSED | LED:OFF\r\n",23,HAL_MAX_DELAY);
+      |                                            ^~~~~
+      |                                            huart2
+../Core/Src/main.c:72:51: error: 'uin8_t' undeclared (first use in this function); did you mean 'uint8_t'?
+   72 |                         HAL_UART_Transmit(&uart2,(uin8_t*)"NOT PRESSED | LED:OFF\r\n",23,HAL_MAX_DELAY);
+      |                                                   ^~~~~~
+      |                                                   uint8_t
+../Core/Src/main.c:72:58: error: expected expression before ')' token
+   72 |                         HAL_UART_Transmit(&uart2,(uin8_t*)"NOT PRESSED | LED:OFF\r\n",23,HAL_MAX_DELAY);
+      |                                                          ^
+../Core/Src/main.c:72:25: error: too few arguments to function 'HAL_UART_Transmit'
+   72 |                         HAL_UART_Transmit(&uart2,(uin8_t*)"NOT PRESSED | LED:OFF\r\n",23,HAL_MAX_DELAY);
+      |                         ^~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:19: note: declared here
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:77:58: error: expected expression before ')' token
+   77 |                         HAL_UART_Transmit(&uart2,(uin8_t*)"NOT PRESSED | LED:ON\r\n",23,HAL_MAX_DELAY);
+      |                                                          ^
+../Core/Src/main.c:77:25: error: too few arguments to function 'HAL_UART_Transmit'
+   77 |                         HAL_UART_Transmit(&uart2,(uin8_t*)"NOT PRESSED | LED:ON\r\n",23,HAL_MAX_DELAY);
+      |                         ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:19: note: declared here
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:1: error: implicit declaration of function 'HAL_TIM_Base_Sart_IT'; did you mean 'HAL_TIM_Base_Start_IT'? [-Wimplicit-function-declaration]
+  115 | HAL_TIM_Base_Sart_IT(&htim7);
+      | ^~~~~~~~~~~~~~~~~~~~
+      | HAL_TIM_Base_Start_IT
+../Core/Src/main.c:115:23: error: 'htim7' undeclared (first use in this function)
+  115 | HAL_TIM_Base_Sart_IT(&htim7);
+      |                       ^~~~~
+../Core/Src/main.c:117:20: error: 'uart2' undeclared (first use in this function); did you mean 'huart2'?
+  117 | HAL_UART_Transmit(&uart2,(uin8_t*)"SUNBEAM!!\r\n",9,HAL_MAX_DELAY);
+      |                    ^~~~~
+      |                    huart2
+../Core/Src/main.c:117:27: error: 'uin8_t' undeclared (first use in this function); did you mean 'uint8_t'?
+  117 | HAL_UART_Transmit(&uart2,(uin8_t*)"SUNBEAM!!\r\n",9,HAL_MAX_DELAY);
+      |                           ^~~~~~
+      |                           uint8_t
+../Core/Src/main.c:117:34: error: expected expression before ')' token
+  117 | HAL_UART_Transmit(&uart2,(uin8_t*)"SUNBEAM!!\r\n",9,HAL_MAX_DELAY);
+      |                                  ^
+../Core/Src/main.c:117:1: error: too few arguments to function 'HAL_UART_Transmit'
+  117 | HAL_UART_Transmit(&uart2,(uin8_t*)"SUNBEAM!!\r\n",9,HAL_MAX_DELAY);
+      | ^~~~~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:19: note: declared here
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'MX_TIM7_Init':
+../Core/Src/main.c:197:3: error: 'htim7' undeclared (first use in this function)
+  197 |   htim7.Instance = TIM7;
+      |   ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:300:30: error: unknown type name 'unit16_t'; did you mean 'uint16_t'?
+  300 | void HAL_GPIO_EXIT_Callback (unit16_t GPIO_Pin)
+      |                              ^~~~~~~~
+      |                              uint16_t
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+19:00:03 Build Failed. 19 errors, 0 warnings. (took 170ms)
+
