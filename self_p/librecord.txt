@@ -1,0 +1,6 @@
+
+2	gita	of	1	0	
+2	ram	ravan	1	0	
+2	ramayan	shyam	1	0	
+2	sheeta	prapti	1	0	
+2	gitta	3	1	4	3	3	3	3	
