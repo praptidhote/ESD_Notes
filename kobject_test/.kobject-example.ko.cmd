@@ -1,0 +1,1 @@
+savedcmd_/home/sunbeam/Desktop/kobject_test/kobject-example.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/sunbeam/Desktop/kobject_test/kobject-example.ko /home/sunbeam/Desktop/kobject_test/kobject-example.o /home/sunbeam/Desktop/kobject_test/kobject-example.mod.o

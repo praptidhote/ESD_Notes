@@ -1,0 +1,1 @@
+savedcmd_/home/sunbeam/Desktop/kobject_test/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/sunbeam/Desktop/kobject_test/Module.symvers -T /home/sunbeam/Desktop/kobject_test/modules.order -i Module.symvers -e 

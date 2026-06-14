@@ -1,0 +1,1 @@
+savedcmd_/home/sunbeam/Desktop/kobject_test/kobject-example.mod := printf '%s\n'   kobject-example.o | awk '!x[$$0]++ { print("/home/sunbeam/Desktop/kobject_test/"$$0) }' > /home/sunbeam/Desktop/kobject_test/kobject-example.mod
