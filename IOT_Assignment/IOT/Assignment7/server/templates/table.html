@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Temperatures</title>
+    </head>
+    <body>
+        <h1>List of Temperatures : </h1>
+        <table>
+            <tr>
+                <th>Temperature</th>
+                <th>Location</th>
+            </tr>
+            {% for temp, loc in message %}
+                <tr>
+                    <td>{{temp}}</td>
+                    <td>{{loc}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
