@@ -1,0 +1,1 @@
+savedcmd_/home/sunbeam/Desktop/ELDD/pchar.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/sunbeam/Desktop/ELDD/pchar.ko /home/sunbeam/Desktop/ELDD/pchar.o /home/sunbeam/Desktop/ELDD/pchar.mod.o
