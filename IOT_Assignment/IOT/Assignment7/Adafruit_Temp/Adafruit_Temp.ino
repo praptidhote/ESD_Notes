@@ -2,7 +2,7 @@
 #include<AdafruitIO_WiFi.h>
 
 #define IO_USERNAME   "praptidhote"
-#define IO_KEY    "aio_VVTW25uRoexhBpWPr4806CHChXlT"
+#define IO_KEY    "YOUR_KEY_HERE"
 
 #define WIFI_SSID     "$dvd$"
 #define WIFI_PASSWORD "dvd12345"
